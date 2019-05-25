@@ -14,7 +14,7 @@ namespace QuickBuyDominio.Entidades
         {
             if (ProdutoId == 0)
             {
-                AdicionarMensagem("Não foi identificada a referÊncia do produto!");
+                AdicionarMensagem("Não foi identificada a referência do produto!");
             }
             if (Quantidade == 0)
             {
