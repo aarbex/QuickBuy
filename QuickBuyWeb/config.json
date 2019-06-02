@@ -1,0 +1,8 @@
+{
+	"ConnectionsStrings": {
+		"QuickBuyDB": "Server=localhost;Database=QuickBuyDB;Uid=aarbex;Pwd=fuckeradmin;"
+	}
+}
+
+
+

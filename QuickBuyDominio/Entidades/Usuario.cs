@@ -10,7 +10,7 @@ namespace QuickBuyDominio.Entidades
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
 
-        public ICollection<Pedido> Pedidos { get; set; }
+        public virtual ICollection<Pedido> Pedidos { get; set; }
 
         public override void Validate()
         {
@@ -20,15 +20,15 @@ namespace QuickBuyDominio.Entidades
             }
             if (string.IsNullOrEmpty(Senha))
             {
-                AdicionarMensagem("Senha não informada!")
+                AdicionarMensagem("Senha não informada!");
             }
             if (string.IsNullOrEmpty(Nome))
             {
-                AdicionarMensagem("Nome não informada!")
+                AdicionarMensagem("Nome não informada!");
             }
             if (string.IsNullOrEmpty(Sobrenome))
             {
-                AdicionarMensagem("Sobrenome não informada!")
+                AdicionarMensagem("Sobrenome não informada!");
             }
         }
     }
