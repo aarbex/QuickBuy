@@ -35,14 +35,12 @@ namespace QuickBuyRepositorio.Config
                 .IsRequired()
                 .HasMaxLength(20);
 
-            builder.Property(p => p.FormaPagamento)
-                .IsRequired();
+            builder.Ignore(p => p.FormaPagamento);
 
             builder.Property(p => p.FormaPagamentoId)
                 .IsRequired();
 
-            builder.Property(p => p.ItensPedidos)
-                .IsRequired();
+            builder.Ignore(p => p.ItensPedidos);
 
             builder.Property(p => p.NumeroEndereco)
                 .IsRequired();

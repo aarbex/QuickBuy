@@ -22,17 +22,17 @@ namespace QuickBuyRepositorio.Config
             builder.Property(u => u.Nome)
                 .IsRequired()
                 .HasMaxLength(50)
-                .HasColumnType("nvarchar");
+                .HasColumnType("VARCHAR(30)");
 
             builder.Property(u => u.Sobrenome)
                 .IsRequired()
                 .HasMaxLength(50)
-                .HasColumnType("nvarchar");
+                .HasColumnType("VARCHAR(30)");
 
             builder.Property(u => u.Senha)
                 .IsRequired()
                 .HasMaxLength(400)
-                .HasColumnType("nvarchar");
+                .HasColumnType("VARCHAR(30)");
 
             builder
                 .HasMany(u => u.Pedidos)
